@@ -1,42 +1,226 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+ .navContainer{
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  gap: 40px;
+  font-family: "Poppins", serif;
+  padding: 15px 20px;
+  /* border-radius: 50px; */
+  font-size: 20px;
+  cursor: pointer;
+
+ 
+}
+img{
+  height: 200px;
+  width: 200px;
+ 
+}
+.profileimg{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px; */
+
+    margin-top: 30px;
+    width: 240px;
+    border-radius: 50%
+}
+.img{
+  border-radius: 50%;
+}
+
+.link{
+text-decoration: none;
+color: white;
+font-size: 18px;
+transition: all 0.5s ease;
+
+&:hover{
+font-size: 20px;
+  background: linear-gradient(270deg,#DF8908 10%,#B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+}
+.secondary_text{
+  width: 50%;
   text-align: center;
+  font-size: 18px;
+  line-height: 30px
 }
+button{
+  padding: 10px 25px;
+  border-radius: 20px;
+  background: linear-gradient(267deg,#DA7C25 .36%,#B923E1 102.06%);
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: white;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.About_main .left img{
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.name{
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  text-align: center;
+  width: 65%;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 70px;
+  background: linear-gradient(270deg,#DF8908 10%,#B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+.About_Discription p{
+  padding-right: 100px;
+  line-height: 30px;
+}
+.About_Discription{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 50px;
+}
+.About_main{
+  display: flex;
+  gap: 20px;
+  padding: 0px 100px;
+}
+h1{
+  font-size:xx-large;
+}
+#heroline{
+ font-family: "Roboto", serif;
+  font-size:40px;
+}
+.logoimg{
+  font-size: 70px;
+  transition:all 0.5s ease;
+  &:hover{
+    background: linear-gradient(270deg,#DF8908 10%,#B415FF 100%);
+    background-clip: text;
+    color: transparent;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent */
+    
   }
-  to {
-    transform: rotate(360deg);
+}
+section{
+  margin:5% auto;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  font-family: "Roboto", serif;
+gap: 40px;
+}
+.section_title{
+  font-size:50px;
+
+}
+.skill{
+  /* margin-left: 25px; */
+  /* padding: 12px; */
+  display:  flex;  
+  transition: 0.3s ease;
+  &:hover{
+    transform: scale(1.1);
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+}
+hr{
+  width: 450px;
+  height: 7px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  background: linear-gradient(267deg,#DA7C25 .36%,#B923E1 102.06%);
+}
+.About_skill{  
+  /* width: 75%; */
+  /* padding: 40px; */
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 45px;
+  margin-left: 50px;
+
+}
+#javascript{
+  width: 600px;
+}
+#htmlcss{
+  width: 700px;
+}
+#tailwindcss{
+  width: 600px;
+
+}
+#react{
+  width: 400px;
+}
+.footerdesign{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+&:hover{
+  transform: scale(1.1);
+
+}
+}
+.About_footer{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 50vw;
+  gap: 40px;
+}
+.midhr{
+  height: 75px;
+  width: 2px;
+  border-radius: 20px;
+  /* color: white;
+   */
+background-color: white;
   }
+.skill h3{
+  min-width: 130px;
 }
-
-.card {
-  padding: 2em;
+.footerdesign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
+.footerdesign h4{
+  font-size: 30px;
+  background: linear-gradient(270deg,#DF8908 10%,#B415FF 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-.read-the-docs {
-  color: #888;
+  
+
+}
+/* .footerexperiance{} */
+
+
+.link:hover{
 }
